@@ -2,7 +2,24 @@
 var express = require('express');
 var fs = require('fs'); //อ่านไฟล์ .jason
 var app = express();
+var cors = require("cors");
+var mongoose = require("mongoose");
+//เชื่อมต่อ mongodb
+var mongo_uri = "mongodb+srv://DeadEye:0857604626@mrdeadeye-zj5ny.gcp.mongodb.net/Testdata?retryWrites=true&w=majority";
+mongoose.Promise = global.Promise;
+mongoose.connect(mongo_uri, { useNewUrlParser: true }).then(
+  () => {
+    console.log("[success] task 1 : connected to the database ");
+  },
+  error => {
+    console.log("[failed] task 1 " + error);
+    process.exit();
+  }
+);
 
+var app = express();
+
+app.use(cors());
 
 //แสดงรายชื่อทั้งหมด
 app.get("/getUsers", function(req, res){
@@ -20,7 +37,7 @@ app.get('/getUsers/:id', function(req, res){
 });
 //ตัวอย่างเพื่อไว้เพิ่ม ข้อมูล
 var user = {
-    "user5" : {
+    "user10" : {
         "id"   : "5",
         "name" : "testname5"
     }

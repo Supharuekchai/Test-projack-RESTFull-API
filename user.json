@@ -14,5 +14,35 @@
     "user4" : {
         "id"  : "4",
         "name": "testname4"
+    },
+    "user5" : {
+		"id": 1,
+		"username": "goldroger",
+		"name": "Gol D. Roger",
+		"position": "Pirate King"
+	},
+	"user6" :{
+		"id": 2,
+		"username": "mrzero",
+		"name": "Sir Crocodile",
+		"position": "Former-Shichibukai"
+	},
+	"user7" :{
+		"id": 3,
+		"username": "luffy",
+		"name": "Monkey D. Luffy",
+		"position": "Captain"
+	},
+	"user8" :{
+		"id": 4,
+		"username": "kuzan",
+		"name": "Aokiji",
+		"position": "Former Marine Admiral"
+	},
+	"user9" :{
+		"id": 5,
+		"username": "shanks",
+		"name": "'Red-Haired' Shanks",
+        "position": "The 4 Emperors"
     }
 }

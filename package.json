@@ -18,8 +18,11 @@
   "homepage": "https://github.com/youwiet/Test-projack-RESTFull-API#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
+    "mongojs": "^2.6.0",
+    "mongoose": "^5.7.5",
     "nodemon": "^1.19.4"
   }
 }
